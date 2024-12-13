@@ -1,0 +1,22 @@
+/* ตั้งค่าสำหรับคอนเทนเนอร์หลัก */
+.admin-dashboard-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: calc(100% - 280px); /* ขยายให้เต็มหน้าจอมากขึ้น */
+    margin-left: 260px; /* ระยะห่างจาก sidebar */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 60px); /* ปรับให้เนื้อหายืดหยุ่นตามความสูงของ navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* ชิดด้านบน */
+    overflow: auto; /* กรณีเนื้อหามีจำนวนมาก */
+}
+
+/* ตั้งค่าสำหรับหัวข้อ */
+.admin-dashboard-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}

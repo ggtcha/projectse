@@ -1,0 +1,97 @@
+body {
+    background-color: #f0f2f5; /* สีพื้นหลัง */
+    font-family: 'Arial', sans-serif; /* ฟอนต์หลัก */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* เปลี่ยนให้เริ่มต้นจากด้านบน */
+    height: auto; /* ปรับให้ไม่เต็มความสูง */
+    padding: 20px; /* ปรับระยะห่าง */
+  }
+  
+  .login-form-container {
+    background-color: #ffffff; /* สีพื้นของฟอร์ม */
+    padding: 30px;
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+    max-width: 400px; /* ขนาดฟอร์ม */
+    width: 100%; /* ให้เต็มความกว้าง */
+    margin-top: 20px; /* ระยะห่างด้านบน (สามารถปรับได้) */
+  }
+  
+  h2 {
+    text-align: center; /* จัดกลางหัวข้อ */
+    color: #333; /* สีหัวข้อ */
+  }
+  
+  .input-group {
+    margin-bottom: 20px; /* ระยะห่างระหว่าง input */
+  }
+  
+  label {
+    display: block; /* แสดง label เป็นบล็อก */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+    font-weight: bold; /* ตัวหนา */
+    color: #6b4423; /* สี label */
+  }
+  
+  input {
+    width: 100%; /* ให้เต็มความกว้าง */
+    padding: 10px; /* ระยะห่างภายใน */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    border-radius: 5px; /* มุมโค้ง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+  }
+  
+  input:focus {
+    border-color: #000000; /* เปลี่ยนสีเส้นขอบเมื่อ focus */
+    outline: none; /* เอา outline ออก */
+  }
+  
+  button {
+    width: 100%; /* ให้เต็มความกว้าง */
+    padding: 10px; /* ระยะห่างภายใน (เพิ่มค่าที่นี่) */
+    background-color: #FFFFFF; /* สีพื้นหลังของปุ่มเป็นสีขาว */
+    color: #6b4423; /* สีข้อความในปุ่มเป็นสีดำ */
+    border: 2px solid #6b4423; /* ขอบสีดำ */
+    border-radius: 5px; /* มุมโค้ง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเป็นมือเมื่อ hover */
+    transition: background-color 0.3s, color 0.3s; /* เพิ่มความนุ่มนวล */
+  }
+  
+  button:hover {
+    background-color: #000000; /* เปลี่ยนสีพื้นหลังเป็นสีดำเมื่อ hover */
+    color: #FFFFFF; /* เปลี่ยนสีข้อความเป็นสีขาวเมื่อ hover */
+  }
+  
+  .login-image-container {
+    flex: 1; /* ให้รูปภาพครอบคลุมพื้นที่ */
+    display: flex; /* ใช้ flexbox */
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: center; /* จัดกลางแนวตั้ง */
+    padding-left: 0px; /* ระยะห่างทางด้านซ้าย */
+  }
+  
+  .login-image-container img {
+    max-width: 100%; /* ให้รูปภาพเต็มความกว้าง */
+    height: 100%; /* ให้รักษาสัดส่วน */
+    border-radius: 10px; /* มุมโค้ง */
+  }
+  .register-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  

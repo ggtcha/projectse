@@ -1,0 +1,109 @@
+/* ตั้งค่าสำหรับ navbar ของ admin */
+.admin-navbar {
+  width: 250px; /* กำหนดความกว้างของ sidebar */
+  background-color: hwb(0 0% 100%); /* สีพื้นหลัง */
+  color: white;
+  height: 100vh; /* ให้ยืดเต็มความสูงของหน้าจอ */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ชิดด้านบน */
+  position: fixed; /* ให้แถบนำทางคงที่ */
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+/* ตั้งค่าสำหรับลิงก์ใน nav */
+.admin-navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสีให้เนียน */
+}
+
+.admin-nav-link:hover {
+  background-color: hsl(152, 86%, 14%);
+}
+
+
+
+.logout-button {
+  color: white;
+  background: none;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-icon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #E74C3C;
+}
+
+.logout-button i {
+  margin-right: 15px;
+  color: #FFFFFF;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .admin-navbar {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .admin-nav-link {
+    font-size: 14px;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+  }
+
+  .logout-button {
+    font-size: 14px;
+  }
+}
+
+/* ตั้งค่าสำหรับเนื้อหาหลัก */
+.admin-main-content {
+  margin-left: 250px; /* ให้เนื้อหาหลักชิดขวาจาก sidebar */
+  padding: 20px;
+  background-color: #f8f9fa;
+  height: 100vh;
+  overflow-y: auto;
+}

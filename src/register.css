@@ -1,0 +1,75 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* เปลี่ยนให้เริ่มต้นจากด้านบน */
+    height: auto; /* ปรับให้ไม่เต็มความสูง */
+    padding: 20px; /* ปรับระยะห่าง */
+  }
+  
+  .register-form-container {
+    background-color: #ffffff; /* สีพื้นของฟอร์ม */
+    padding: 30px;
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+    max-width: 400px; /* ขนาดฟอร์ม */
+    width: 100%; /* ให้เต็มความกว้าง */
+    margin-top: 20px; /* ระยะห่างด้านบน (สามารถปรับได้) */
+  }
+  
+  .register-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.2);
+  }
+  
+  button[type="submit"] {
+    width: 100%; /* ให้เต็มความกว้าง */
+    padding: 10px; /* ระยะห่างภายใน (เพิ่มค่าที่นี่) */
+    background-color: #6b4423; /* สีพื้นหลังของปุ่มเป็นสีขาว */
+    color: #FFFFFF; /* สีข้อความในปุ่มเป็นสีดำ */
+    border: 2px solid #6b4423; /* ขอบสีดำ */
+    border-radius: 5px; /* มุมโค้ง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเป็นมือเมื่อ hover */
+    transition: background-color 0.3s, color 0.3s; /* เพิ่มความนุ่มนวล */
+
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6b4423;
+  }
+  
+  @media (max-width: 768px) {
+    .register-form-container {
+      padding: 20px;
+    }
+  }
+  

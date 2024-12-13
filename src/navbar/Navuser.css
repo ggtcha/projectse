@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+.navbar {
+  background-color: #084c29; /* พื้นหลังสีดำ */
+  padding: 0.5rem 1rem; /* ลด padding เพื่อให้เล็กลง */
+  height: 40px; /* ลดความสูง */
+  font-family: 'Prompt', sans-serif;
+}
+
+.navbar .nav-link {
+  color: #fff !important; /* ตัวอักษรสีขาว */
+  font-size: 0.9rem; /* ลดขนาดฟอนต์ */
+}
+
+.navbar .nav-link.active {
+  font-weight: bold; /* ทำให้ดูเด่นขึ้น */
+}
+
+.navbar .custom-btn {
+  color: #fff; /* ตัวอักษรปุ่มสีขาว */
+  border: 2px solid #fff; /* ขอบปุ่มสีขาว */
+  background-color: transparent; /* พื้นหลังโปร่งใส */
+  font-size: 0.85rem; /* ลดขนาดฟอนต์ของปุ่ม */
+  padding: 0.4rem 0.8rem; /* ลด padding ของปุ่ม */
+  transition: background-color 0.3s, color 0.3s; /* เพิ่มเอฟเฟกต์เวลา hover */
+}
+
+.navbar .custom-btn:hover {
+  background-color: #fff; /* พื้นหลังเปลี่ยนเป็นสีขาวเมื่อ hover */
+  color: #000; /* ตัวอักษรเปลี่ยนเป็นสีดำเมื่อ hover */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: none; /* เอาเส้นใต้ปกติออก */
+  color: #b8b8b8; /* เปลี่ยนสีลิงก์เมื่อ hover */
+}
+
+.nav-link::after {
+  content: ''; /* สร้างเส้นใต้ */
+  display: block;
+  height: 2px; /* ความหนาของเส้นใต้ */
+  background-color: #0f5753; /* เปลี่ยนเป็นสีเทา */
+  transform: scaleX(0); /* เริ่มต้นไม่แสดงเส้น */
+  transition: transform 0.3s ease-in-out; /* เพิ่ม transition ให้กับการแสดงเส้น */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* เส้นใต้จะเลื่อนจากซ้ายไปขวาเมื่อ hover */
+}

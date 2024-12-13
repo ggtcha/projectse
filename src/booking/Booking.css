@@ -1,0 +1,38 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .booking-container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-container h1 {
+    color: #333;
+  }
+  
+  .booking-form label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .booking-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .booking-form .btn-primary {
+    background-color: #6b4423; /* สีน้ำตาลต้นไม้ */
+    border: none;
+  }
+  
+  .booking-form .btn-primary:hover {
+    background-color: #5a3820;
+  }
+  
